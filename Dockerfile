@@ -20,9 +20,9 @@ RUN set -xv \
 	&& yum install nginx-plus-module-* -y -x nginx-plus-module-wallarm
 
 RUN set -xv \
-    && yum -y install gcc gcc-c++ make zlib-devel pcre-devel openssl-devel wget make git lua-devel \
+	&& yum -y install gcc gcc-c++ make zlib-devel pcre-devel openssl-devel wget make git lua-devel \
 	&& git clone https://github.com/openresty/lua-nginx-module \
-    && git clone https://github.com/kyprizel/testcookie-nginx-module \
+	&& git clone https://github.com/kyprizel/testcookie-nginx-module \
 	&& wget http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz \
 	&& tar xzvf nginx-${NGINX_VERSION}.tar.gz \
 	&& cd nginx-${NGINX_VERSION} \
