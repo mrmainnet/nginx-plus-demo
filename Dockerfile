@@ -1,11 +1,11 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++
-# Docker file for mrmainnet/nginx-plus:1.13.0
+# Docker file for mrmainnet/nginx-plus:1.13.10
 #++++++++++++++++++++++++++++++++++++++++++++++++
 
 FROM centos:latest
 MAINTAINER vy.nguyen (ntv1090@gmail.com)
 
-ENV NGINX_VERSION 1.13.0
+ENV NGINX_VERSION 1.13.10
 
 WORKDIR /usr/local/src
 RUN mkdir -p /etc/ssl/nginx
